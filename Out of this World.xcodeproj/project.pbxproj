@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		266A149C1903274900D4C738 /* OWSpaceImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 266A149B1903274900D4C738 /* OWSpaceImageViewController.m */; };
 		A3F6191D18FD817D00C143EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F6191C18FD817D00C143EE /* Foundation.framework */; };
 		A3F6191F18FD817D00C143EE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F6191E18FD817D00C143EE /* CoreGraphics.framework */; };
 		A3F6192118FD817D00C143EE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F6192018FD817D00C143EE /* UIKit.framework */; };
@@ -46,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		266A149A1903274900D4C738 /* OWSpaceImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OWSpaceImageViewController.h; sourceTree = "<group>"; };
+		266A149B1903274900D4C738 /* OWSpaceImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OWSpaceImageViewController.m; sourceTree = "<group>"; };
 		A3F6191918FD817D00C143EE /* Out of this World.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Out of this World.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3F6191C18FD817D00C143EE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A3F6191E18FD817D00C143EE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -145,6 +148,8 @@
 				A3F6195518FD82F100C143EE /* OWOuterSpaceTableViewController.m */,
 				A3F619B218FEB45F00C143EE /* OWSpaceObject.h */,
 				A3F619B318FEB45F00C143EE /* OWSpaceObject.m */,
+				266A149A1903274900D4C738 /* OWSpaceImageViewController.h */,
+				266A149B1903274900D4C738 /* OWSpaceImageViewController.m */,
 				A3F6193418FD817D00C143EE /* Images.xcassets */,
 				A3F6192318FD817D00C143EE /* Supporting Files */,
 			);
@@ -304,6 +309,7 @@
 				A3F6192D18FD817D00C143EE /* AppDelegate.m in Sources */,
 				A3F6192918FD817D00C143EE /* main.m in Sources */,
 				A3F6195918FDDDEC00C143EE /* AstronomicalData.m in Sources */,
+				266A149C1903274900D4C738 /* OWSpaceImageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
