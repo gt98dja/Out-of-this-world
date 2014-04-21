@@ -9,6 +9,7 @@
 #import "OWOuterSpaceTableViewController.h"
 #import "AstronomicalData.h"
 #import "OWSpaceObject.h"
+#import "OWSpaceImageViewController.h"
 
 @interface OWOuterSpaceTableViewController ()
 
@@ -42,7 +43,21 @@
         OWSpaceObject *planet = [[OWSpaceObject alloc] initWithData:planetData andImage:[UIImage imageNamed:imageName]];
         [self.planets addObject:planet];
     }
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([sender isKindOfClass:[UITableViewCell class]])
+    {
+        if ([segue.destinationViewController isKindOfClass:[OWSpaceImageViewController class]])
+        {
+            OWSpaceImageViewController *nextViewController = segue.destinationViewController;
+            NSIndexPath *path = [self.tableView indexPathForCell:sender];
+            OWSpaceObject *selectedObject = self.planets[path.row];
+            nextViewController.spaceObject = selectedObject;
+        }
     }
+}
     
 //    NSMutableDictionary *myDictionary = [[NSMutableDictionary alloc] init];
 //    NSString *firstColor = @"red";
